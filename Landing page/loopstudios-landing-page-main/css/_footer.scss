@@ -1,0 +1,123 @@
+footer {
+  width: 100%;
+  padding: 2em;
+  background-color: #000;
+  display: flex;
+  .container-footer {
+    max-width: 90em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+
+    .first-column {
+      display: flex;
+      flex-direction: column;
+     
+      img {
+        width: 10em;
+      }
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          padding: 0.5em;
+           color: #fff;
+           position: relative;
+           &::before{
+               position: absolute;
+               bottom: 0;
+               left: 16%;
+               content: '';
+               width: 0em;
+               height: 2px;
+               display: block;
+               background-color: white;
+               transition: width .7s ease-in;
+           }
+           &:hover::before{
+               width: 2em;
+           }
+          &:first-child {
+              
+            padding-left: 0;
+          }
+        }
+      }
+    
+    }
+
+    .second-column {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      align-items: flex-end;
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          padding: 0.5em;
+          position: relative;
+          &::before{
+              position: absolute;
+              bottom: 0;
+              left: 10%;
+              content: '';
+              width: 0em;
+              height: 2px;
+              display: block;
+              background-color: white;
+              transition: width .7s ease-in;
+          }
+          &:hover::before{
+              width: 2em;
+          }
+          &:first-child {
+            padding-left: 0;
+          
+          }
+        }
+      }
+      p{
+        color:  hsl(0, 0%, 55%);
+    }
+    }
+  }
+ 
+}
+
+@media only screen and(max-width:800px) {
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .first-column{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .second-column{
+      margin-top: 1em;
+    }
+
+    footer .container-footer .second-column{
+       
+        align-items: center;
+    }
+
+    footer .container-footer .first-column ul li{
+        display: block;
+       text-align: center;
+        padding: 1em;
+        &:first-child{
+            padding-top: 1.5em;
+        }
+
+        &:last-child{
+            padding-bottom: .6em;
+        }
+        
+    }
+}

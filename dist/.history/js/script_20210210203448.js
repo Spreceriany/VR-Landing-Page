@@ -13,8 +13,6 @@ const closeBtn = document.querySelector(".close");
 const overlay = document.querySelector(".overlay");
 const overlayLinks = document.querySelectorAll(".overlay ul a li");
 
-const body = document.querySelector("body");
-
 /* Header and hero section*/
 t1.from(logo, { autoAlpha: 0, y: "-100%", duration: 2 })
 
@@ -61,12 +59,10 @@ t2.to(overlay, {
 
 burger.addEventListener("click", () => {
   t2.play();
-  body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", () => {
   t2.reverse(0.8);
-  body.style.overflow = "auto";
 });
 
 const t3 = gsap.timeline();

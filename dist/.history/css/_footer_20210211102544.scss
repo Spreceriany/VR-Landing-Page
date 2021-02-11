@@ -39,11 +39,7 @@ footer {
            &:hover::before{
                width: 2em;
            }
-          &:first-child {
-              
-            padding-left: 0;
-          }
-        }
+        
       }
     
     }
@@ -73,7 +69,10 @@ footer {
           &:hover::before{
               width: 2em;
           }
-        
+          &:first-child {
+            padding-left: 0;
+          
+          }
         }
       }
       p{
@@ -117,4 +116,5 @@ footer {
         }
         
     }
+}
 }

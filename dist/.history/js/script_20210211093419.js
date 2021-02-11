@@ -66,7 +66,6 @@ burger.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   t2.reverse(0.8);
-  body.style.overflow = "auto";
 });
 
 const t3 = gsap.timeline();

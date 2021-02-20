@@ -1,5 +1,5 @@
-
-  const t1 = gsap.timeline({
+window.onload= () =>{
+const t1 = gsap.timeline({
     defaults: { duration: 1, ease: Back.easeOut.config(2) },
   });
   const t2 = gsap.timeline({
@@ -183,6 +183,8 @@
   gsap.fromTo(".l3", 3.5, {height:0}, {height:"100%",ease: "power4.out"})
   gsap.fromTo(".l4", 4, {width:0}, {width:"100%",ease: "power4.out"})
   
+  
+}
   
 
 

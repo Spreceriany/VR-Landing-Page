@@ -15,7 +15,8 @@ const overlayLinks = document.querySelectorAll(".overlay ul a li");
 
 const body = document.querySelector("body");
 
-/* Header and hero section*/
+window.addEventListener("load",(event) =>{
+  /* Header and hero section*/
 t1.from(logo, { autoAlpha: 0, y: "-100%", duration: 2 })
 
   .from(
@@ -181,4 +182,8 @@ gsap.fromTo(".l1", 2.5, {height:0}, {height:"100%",ease: "power4.out"})
 gsap.fromTo(".l2", 3, {width:0,}, {width:"100%",ease: "power4.out"})
 gsap.fromTo(".l3", 3.5, {height:0}, {height:"100%",ease: "power4.out"})
 gsap.fromTo(".l4", 4, {width:0}, {width:"100%",ease: "power4.out"})
+
+}
+
+
 
